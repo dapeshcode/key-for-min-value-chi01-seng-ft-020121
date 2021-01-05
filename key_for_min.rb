@@ -3,4 +3,14 @@
 
 def key_for_min_value(name_hash)
 
+  min_value = 1000
+  min_item = nil
+  
+  name_hash.each do |item, value|
+    if value < min_value 
+      min_value = value
+      min_item = item 
+    end 
+  end
+    min_item 
 end
